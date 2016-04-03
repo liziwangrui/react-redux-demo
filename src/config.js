@@ -4,6 +4,6 @@
 
 module.exports = {
   'port': 2222,
-  "env": "",
-  "api": "https://backend-boilerplate.herokuapp.com"
+  'env': '',
+  'api': 'http://localhost:9999'
 };

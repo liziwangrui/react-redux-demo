@@ -9,13 +9,17 @@ const Index = React.createClass({
     this.props.numberActions.add();
   },
 
+  componentDidMount: function () {
+    this.props.practiceActions.fetchPractice(this.props.params.practiceId);
+  },
+
   render: function () {
 
     return (
       <div>
         <h1>练习ID:{this.props.params.practiceId}</h1>
         <Test handleClick={this.handleClick}/>
-
+        {this.props.practice.data.name}
         <h1>{this.props.number}</h1>
       </div>
 
