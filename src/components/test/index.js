@@ -1,5 +1,5 @@
 import React from 'react';
-import Style from './index.scss';
+import './index.scss';
 
 const Test = React.createClass({
 
@@ -7,7 +7,7 @@ const Test = React.createClass({
     return (
       <div>
         <button onClick={this.props.handleClick}>点我</button>
-        <h1 className={Style.demo}>测试组件</h1>
+        <h1 className="demo">测试组件</h1>
       </div>
     );
   }
