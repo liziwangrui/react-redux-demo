@@ -24,10 +24,7 @@ function practice(state, action) {
         data: action.practice
       });
     default :
-      return Object.assign({}, state, {
-        isFetching: false,
-        data: {}
-      });
+      return state;
   }
 }
 

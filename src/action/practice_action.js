@@ -6,10 +6,6 @@ import fetch from 'isomorphic-fetch';
 import ActionTypes from '../constants/action_types';
 import Config from '../config.js';
 
-exports.request = (state) => ({
-  type: ActionTypes.ADD,
-  state
-});
 
 exports.requestPractice = function (practiceId) {
   return {
