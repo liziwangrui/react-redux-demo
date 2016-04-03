@@ -1,7 +1,7 @@
 import React from 'react';  // eslint-disable-line no-unused-vars
 import {Router, Route, Redirect} from 'react-router';  // eslint-disable-line no-unused-vars
-import Page1 from './containers/page1';
 import Index from './containers/index';
+import Layout from './containers/layout';
 
 
 module.exports = (function (history) {
@@ -10,8 +10,8 @@ module.exports = (function (history) {
   }
   return (
     <Router {...history}>
-      <Route path='/' component={Index}>
-        <Route path='/:practiceId' component={Page1}/>
+      <Route path='/' component={Layout}>
+        <Route path='/:practiceId' component={Index}/>
         <Redirect from='*' to='/'/>
       </Route>
     </Router>

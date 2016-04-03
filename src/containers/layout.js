@@ -1,24 +1,27 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
+import { Router, Route, Link } from 'react-router';   // eslint-disable-line no-unused-vars
+
 import actions from '../action/root_action';
 
 
-const Search = React.createClass({
+var Index = React.createClass({
 
   render: function () {
-
     return (
-      <h1>page1</h1>
+      <div>
+        {this.props.children}
+        <p>页脚</p>
+      </div>
     );
   }
 });
 
-
 function select(state) {
 
   return {
-    search: state.number,
+    search: state.search,
     actions: actions
   };
 }
@@ -29,7 +32,7 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-module.exports = connect(select, mapDispatchToProps)(Search);
+module.exports = connect(select, mapDispatchToProps)(Index);
 
 
 

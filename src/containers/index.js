@@ -1,31 +1,25 @@
-var React = require('react');
-var connect = require('react-redux').connect;
-var bindActionCreators = require('redux').bindActionCreators;
-import { Router, Route, Link } from 'react-router';   // eslint-disable-line no-unused-vars
+import React from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import actions from '../action/root_action';
 
 import Test from '../components/test/index';  // eslint-disable-line no-unused-vars
 
-import actions from '../action/root_action';
-
-
-var Index = React.createClass({
+const Search = React.createClass({
 
   render: function () {
+
     return (
-      <div>
-        <h1>Layout</h1>
-        <Test />
-        <Link to='/a'>点我na</Link>
-        {this.props.children}
-      </div>
+      <h1>Index</h1>
     );
   }
 });
 
+
 function select(state) {
 
   return {
-    search: state.search,
+    search: state.number,
     actions: actions
   };
 }
@@ -36,7 +30,7 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-module.exports = connect(select, mapDispatchToProps)(Index);
+module.exports = connect(select, mapDispatchToProps)(Search);
 
 
 
