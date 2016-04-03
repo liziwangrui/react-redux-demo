@@ -13,7 +13,7 @@ const Index = React.createClass({
 
     return (
       <div>
-        <h1>Index</h1>
+        <h1>练习ID:{this.props.params.practiceId}</h1>
         <Test handleClick={this.handleClick}/>
 
         <h1>{this.props.number}</h1>

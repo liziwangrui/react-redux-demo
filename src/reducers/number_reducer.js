@@ -1,4 +1,4 @@
-var ActionTypes = require('../constants/action_types');
+import ActionTypes from '../constants/action_types';
 
 function number(state, action) {
   if (!state) {

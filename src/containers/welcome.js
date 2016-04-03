@@ -2,19 +2,15 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {mapStateToProps, mapDispatchToProps} from '../mixin/bind';
 
-var Layout = React.createClass({
+var Welcome = React.createClass({
 
   render: function () {
     return (
       <div>
-        {this.props.children}
+        <h1>Welcome to 背单词</h1>
       </div>
     );
   }
 });
 
-module.exports = connect(mapStateToProps, mapDispatchToProps)(Layout);
-
-
-
-
+module.exports = connect(mapStateToProps, mapDispatchToProps)(Welcome);
