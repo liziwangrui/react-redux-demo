@@ -5,7 +5,7 @@ function number(state, action) {
     state = 0;
   }
   switch (action.type) {
-    case ActionTypes.ADD_TAG:
+    case ActionTypes.ADD:
       return state + 1;
     default :
       return state;

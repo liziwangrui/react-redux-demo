@@ -1,10 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {bindActionCreators} from 'redux';
-import { Router, Route, Link } from 'react-router';   // eslint-disable-line no-unused-vars
-
-import actions from '../action/root_action';
-
+import {mapStateToProps, mapDispatchToProps} from '../mixin/bind';
 
 var Index = React.createClass({
 
@@ -12,27 +8,12 @@ var Index = React.createClass({
     return (
       <div>
         {this.props.children}
-        <p>页脚</p>
       </div>
     );
   }
 });
 
-function select(state) {
-
-  return {
-    search: state.search,
-    actions: actions
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(actions, dispatch)
-  };
-}
-
-module.exports = connect(select, mapDispatchToProps)(Index);
+module.exports = connect(mapStateToProps, mapDispatchToProps)(Index);
 
 
 
