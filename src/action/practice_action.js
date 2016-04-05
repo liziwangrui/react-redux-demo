@@ -10,7 +10,7 @@ import Config from '../config.js';
 exports.requestPractice = function (practiceId) {
   return {
     type: ActionTypes.REQUEST_PRACTICE,
-    reddit: practiceId
+    practiceId
   };
 };
 
