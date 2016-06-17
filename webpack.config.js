@@ -10,6 +10,12 @@ var env = new webpack.DefinePlugin({
   }
 });
 
+//var compress = new webpack.optimize.UglifyJsPlugin({
+//  compress: {
+//    warnings: false
+//  }
+//});
+
 module.exports = {
   entry: {
     index: './src/index.js'
@@ -48,5 +54,6 @@ module.exports = {
   postcss: [autoprefixer, precss],
   resolve: {
     extensions: ['', '.js', '.json', '.scss', '.png', 'jpg', 'gif']
-  }
+  },
+  plugins: []
 };

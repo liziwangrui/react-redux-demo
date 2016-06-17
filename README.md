@@ -13,3 +13,6 @@
 8. sudo vim /etc/hosts 修改hosts文件，添加danci.smartstudy.com
 9. npm run watch(启动同步刷新）
 10. 浏览器访问danci.smartstudy.com:3000/11
+
+
+#  webpack全局安装   npm install -g webpack

@@ -2,7 +2,7 @@ var keyMirror = require('keymirror');
 
 module.exports = keyMirror({
   ADD: null,
-
+  DEL:null,
   // 请求练习基本信息
   REQUEST_PRACTICE: null,
   // 接收练习基本信息
