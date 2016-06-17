@@ -1,9 +1,9 @@
 # 1. 项目说明
-本项目为背单词项目前端部分，开发人员：梁少峰，谢闪闪
+本项目为react-redux的一个demo,具体是去理解reducer store action是怎么处理数据的
 
 # 2. 项目启动说明
 
-1. git clone git@code.smartstudy.com:liangshaofeng/awesome-words.git
+1. git clone  https://github.com/liziwangrui/react-redux-demo.git
 2. npm i
 3. cp src/config.example.js src/config.js
 4. webpack (包含watch js和scss功能）
@@ -16,3 +16,7 @@
 
 
 #  webpack全局安装   npm install -g webpack
+
+
+##  修改远程仓库地址
+ git remote set-url origin  https://github.com/liziwangrui/react-redux-demo.git  
